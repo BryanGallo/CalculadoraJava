@@ -24,7 +24,7 @@ public class Main {
                 if (operation == 5){
                     System.out.println("Gracias por usar la calculadora Adios");
 
-                }else if( operation > 5){
+                }else if( operation < 0 || operation > 5){
                     System.out.println("Opcion equivocada");
                 }else{
                     System.out.println("Proporciona el primer valor:");
@@ -51,8 +51,6 @@ public class Main {
                         case 5:
                             System.out.println("Gracias por usar la calculadora Adios");
                             break;
-                        default:
-                            System.out.println("Opcion equivocada");
                     }
                 }
             }catch (Exception e){
