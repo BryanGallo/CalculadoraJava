@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner consola = new Scanner(System.in);
         int operation;
+        int result;
         do {
             System.out.println("*** Aplicacion Calculadora ***");
             System.out.println("Proporciona el primer valor:");
@@ -25,16 +26,20 @@ public class Main {
             operation = Integer.parseInt(consola.nextLine());
             switch (operation) {
                 case 1:
-                    System.out.println("SUMA");
+                    result = valor1 + valor2;
+                    System.out.println("El resultado de la suma es: "+result);
                     break;
                 case 2:
-                    System.out.println("RESTA");
+                    result = valor1 - valor2;
+                    System.out.println("El resultado de la resta es: "+result);
                     break;
                 case 3:
-                    System.out.println("MULTIPLICACION");
+                    result = valor1 * valor2;
+                    System.out.println("El resultado de la multiplicacion es: "+result);
                     break;
                 case 4:
-                    System.out.println("DIVISION");
+                    result = valor1 / valor2;
+                    System.out.println("El resultado de la division es: "+result);
                     break;
                 case 5:
                     System.out.println("Gracias por usar la calculadora Adios");
